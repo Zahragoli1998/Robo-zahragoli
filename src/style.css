@@ -1,0 +1,139 @@
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+  
+  }
+  html{
+    display: flex;
+    background:linear-gradient(to bottom,rgb(226, 114, 129)0%,rgb(131, 133, 134)100%) ;
+  }
+  
+  
+  body{
+    display: flex;
+  }
+   
+  #root{
+    display: flex;
+    
+  }
+  
+  .card{
+    background-color: rgb(94, 91, 90);
+    width: 350px;
+    height: 450px;
+    border: 3px;
+    padding: 5px;
+    margin: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    cursor:pointer;
+    border-radius: 50px;
+  }
+    
+  .card:active,
+  .card:hover{
+    background-color:rgb(234, 245, 138);
+  }
+  
+  .title{
+    text-align: center;
+    font-size: 75px;
+    color: rgb(51, 61, 59);
+    position: absolute;
+    top: 20px;
+    right: 250px;
+    font-family: 'Monoton', cursive;
+    
+  }
+  .inputsearch{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 420px;
+    top: 150px;
+  }
+  .inputsearch:active,
+  .inputsearch:hover{
+    background-color: rgb(234, 245, 138);
+  }
+  .name{
+    font-family: 'Chewy', cursive;
+    color: rgb(228, 108, 154);
+    font-size: 40px;
+    text-align: center;
+  }
+  .name:active,
+  .name:hover{
+    color: rgb(36, 31, 33);
+  }
+  .email{
+    font-family:sans-serif;
+    color: rgb(182, 168, 173);
+    font-size: 20px;
+    text-align: center;
+  }
+   */
+   *{
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+   }
+   body{
+    background:linear-gradient(to bottom,rgb(219, 209, 211)0%,rgb(171, 179, 184)100%) ;
+   }
+   .box{
+       display:flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin: 70px;
+       padding: 5px;
+       align-items: center;
+       
+   }
+   .card{
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(107, 112, 109);
+    text-align: center;
+    border: rgb(4, 51, 18) 4px  solid;
+    border-radius: 10px;
+    font-family: 'Rampart One', cursive;
+    font-size: 12px;
+    cursor: pointer;
+   }
+   .inputsearch{
+    background-color: rgb(199, 211, 204);
+    height: 60px;
+    width: 600px;
+    position: absolute;
+    top: 150px;
+    right: 470px;
+    border-radius: 10px;
+    border-color: rgb(14, 104, 59);
+    border-style: dashed;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    font-size: 75px;
+    color: rgb(51, 61, 59);
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+.card:active,
+.card:hover{
+   background-color:rgb(234, 245, 138);
+}
+.inputsearch:active,
+.inputsearch:hover{
+   background-color: rgb(234, 245, 138);
+}

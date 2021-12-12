@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import Cardlist from './Cardlist';
 import { Robotlist } from './Robotlist';
 import Searchbox from './Searchbox';
-
+import './App.css';
+import './style.css';
 class App extends Component{
     constructor(){
         super()
@@ -37,6 +38,12 @@ class App extends Component{
       
       SearchChange={this.onSearchChange}
      />
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
       <Cardlist Robotlist={filterrobot}/>
     </div>);
 }}
