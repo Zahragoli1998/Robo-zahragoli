@@ -1,9 +1,12 @@
 import React,{Component} from 'react';
 import Cardlist from './Cardlist';
-import { Robotlist } from './Robotlist';
+//import { Robotlist } from './Robotlist';
 import Searchbox from './Searchbox';
 import './App.css';
 import './style.css';
+
+
+
 class App extends Component{
     constructor(){
         super()
@@ -44,7 +47,7 @@ class App extends Component{
      <br/>
      <br/>
      <br/>
-      <Cardlist Robotlist={filterrobot}/>
+      <Cardlist Robotlist={filterrobot} />
     </div>);
 }}
 

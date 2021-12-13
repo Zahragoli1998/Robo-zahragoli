@@ -5,7 +5,12 @@ export const Robotlist = [
     id: 1,
     name : 'Leanne Graham',
    // username: "Bret",
-    email : 'Sincere@april.biz'
+    email : 'Sincere@april.biz',
+    geo :{
+        lat: "-37.3159",
+        lng: "81.1496"
+      }
+
     },
     {
     id: 2,

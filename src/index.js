@@ -5,8 +5,8 @@ import App from './App';
 import styled from 'tachyons-components';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons-components';
-
-
+import 'leaflet';
+import 'react-leaflet';
 
 ReactDOM.render(
   <App />,

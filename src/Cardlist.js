@@ -14,7 +14,8 @@ const Cardlist = ({Robotlist}) => {
         key={i} 
         id={Robotlist[i].id} 
         name={Robotlist[i].name} 
-        email={Robotlist[i].email}/>
+        email={Robotlist[i].email}
+        />
         );
       })
      }
