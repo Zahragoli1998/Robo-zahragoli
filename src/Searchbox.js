@@ -6,7 +6,7 @@ import React from 'react';
      <input 
      className='inputsearch'
      type='search' 
-     placeholder=' robots search'  
+     placeholder=' Search here ......'  
      onChange={SearchChange} />
      {/* <p>kkkkkkk</p> */}
      </div>
