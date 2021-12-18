@@ -64,18 +64,20 @@ class App extends Component {
             {
               this.state.isModalDisplayed
               ?
+              <>
+              <div className='backdrop' onClick={()=>hideModal()}></div>
               <div className='modal'  >
-                <div 
-                  style={{background: 'gray', width: '100px', padding: '4px 2px', position: 'absolute', top: 0, right: 0}} 
+                <div className='btn'
+                  style={{ width: '50px', padding: '4px 2px', position: 'absolute', top: 0, right: 0}} 
                   onClick={() => hideModal()} 
-                > 
-                    close modal 
+                >
                 </div>
                 <br />
                 <br />
                  <Mymap
                  robot={this.state.positionRobot}/>
               </div>
+              </>
               :
               null
             }
