@@ -1,9 +1,9 @@
 import React, { Component} from 'react';
-import Cardlist from './Cardlist';
-import Searchbox from './Searchbox';
-import './App.css';
+import Cardlist from './component/Cardlist';
+import Searchbox from './component/Searchbox';
+import './component/App.css';
 import './style.css';
-import Mymap from './Mymap';
+import Mymap from './component/Mymap';
 import "leaflet/dist/leaflet.css";
 
 
@@ -15,7 +15,7 @@ class App extends Component {
       Robotlist: [],
       searchfield: '',
       isModalDisplayed: false,
-      positionRobot :[]
+      positionRobot :{}
     }
 
   }
@@ -38,10 +38,10 @@ class App extends Component {
   render() {
 
     const showModal = (robot) => {
-        const positionRobots = Object.values(JSON.parse(JSON.stringify(robot.address.geo)));
-        console.log(positionRobots);
-        this.setState({isModalDisplayed: true,positionRobot:[...positionRobots]});
-        //this.setState({positionRobot:[...positionRobots]});
+        const positionRobot = JSON.parse(JSON.stringify(robot.address.geo));
+        console.log(positionRobot);
+        this.setState({isModalDisplayed: true,positionRobot});
+       
         
     }
     
@@ -64,7 +64,7 @@ class App extends Component {
             {
               this.state.isModalDisplayed
               ?
-              <div className='modal' >
+              <div className='modal'  >
                 <div 
                   style={{background: 'gray', width: '100px', padding: '4px 2px', position: 'absolute', top: 0, right: 0}} 
                   onClick={() => hideModal()} 

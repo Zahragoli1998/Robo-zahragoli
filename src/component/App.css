@@ -40,11 +40,13 @@
   width: 100vw;
   height: 600px;
 }
-.mapcontainer{
+.mapcontainer {
   width: 600px;
   height: 400px; 
-  background-color: red; 
-  overflow: hidden;
+  background-color:black; 
+  position: absolute;
+  overflow:auto;
+  
 }
 
 
@@ -53,10 +55,11 @@
   height: 400px;
   background-color: #fff;
   border: 3px solid #000;
-  position: absolute;
+  position: fixed;
   top: calc(50vh - 200px);
   /* top: 50vh; */
   left: calc(50vw - 300px);
-  overflow-y: auto;
+  overflow: auto;
+  
 }
 
