@@ -1,7 +1,6 @@
-import React,{Component} from "react";
+import React,{Component,useEffect,useState} from "react";
 import {useParams} from 'react-router-dom';
 import Card from "./component/Card";
-
 
 // class SingleRobot extends Component{
 //   constructor(){
@@ -48,8 +47,24 @@ import Card from "./component/Card";
 // export default SingleRobot;
 
 export default function SingleRobot() {
+  const [robot, setrobot] = useState([]);
   const { id } = useParams();
-  return(
-    <div> {id} </div>
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setrobot(data);
+      })
+      })
+   return(
+  <div> 
+      <div className='card' style={{ width:300,height:400}} >
+        <img alt='robots' src={`https://robohash.org/${robot.id}?200*200`}/>
+        <div>
+          <h1 className='name'>{robot.name}</h1>
+          <p className='email'>{robot.email}</p>
+        </div>
+      </div>
+  </div>
   )
 }
