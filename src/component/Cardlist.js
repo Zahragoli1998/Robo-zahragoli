@@ -17,13 +17,15 @@ const Cardlist = ({Robotlist, showModal}) => {
         {
         return (
         <>
-        <Card  key={i}
+        <div key={i}>
+        <Card 
             id={Robotlist[i].id} 
             name={Robotlist[i].name} 
             email={Robotlist[i].email}
             showModal={showModal}
             robot={Robotlist[i]}
         />
+        </div>
         </>
         );
       })
